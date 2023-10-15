@@ -1,9 +1,5 @@
-import requests
-import json
+import fastapi
 
-r = requests.get('https://httpbin.org/get')
-
-r_json = json.loads(r.text)
+import Pydantic
 
 
-print(r_json)
